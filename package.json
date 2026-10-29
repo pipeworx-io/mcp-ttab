@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-ttab",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "TTAB (Trademark Trial and Appeal Board) MCP — TTABVUE inquiry system",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-ttab": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ttab"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-ttab.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/ttab",
   "pipeworx": {
-    "sourceHash": "v1-765d24c48eb00b56824d66efaaddcfb23c89ea6a6cfa5e2ad1e8de2ae0064eb7",
-    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
+    "mode": "gateway",
+    "slug": "ttab",
+    "gatewaySlug": "ttab",
+    "sourceHash": "v1-0688512864f904b6a953167c679cefc946b3b0a3dcd468cf4bbbf28505127aff",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
