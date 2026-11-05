@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ttab",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "TTAB (Trademark Trial and Appeal Board) MCP — TTABVUE inquiry system",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "ttab",
     "gatewaySlug": "ttab",
-    "sourceHash": "v1-0688512864f904b6a953167c679cefc946b3b0a3dcd468cf4bbbf28505127aff",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-eb1c0e28f837f276fd61d15c15bd5fc6155ba67d993ca0a56cbdc23477360455",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
